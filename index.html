@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Maronda Orlando Performance Outlook Report Prototype v36</title>
+<title>Maronda Orlando Performance Outlook Report Prototype v49</title>
 <style>
 
     :root {
@@ -3230,6 +3230,1081 @@ button[style*="#009999"] {
   color: #2F5F5A !important;
 }
 
+
+/* v37: replace remaining community tables with a single Community Pulse CTA */
+.remaining-community-pulse {
+  margin: 22px 0 0 !important;
+  padding: 20px 22px !important;
+  border: 1px solid #d8dddd !important;
+  border-radius: 14px !important;
+  background: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 22px !important;
+  box-shadow: 0 1px 0 rgba(31,41,51,.04), 0 5px 14px rgba(31,41,51,.035) !important;
+}
+
+.remaining-community-pulse h3 {
+  margin: 2px 0 6px !important;
+  color: #1f2933 !important;
+  font-size: 22px !important;
+  line-height: 1.15 !important;
+  letter-spacing: -.02em !important;
+}
+
+.remaining-community-pulse p:not(.eyebrow) {
+  margin: 0 !important;
+  color: #606060 !important;
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+  max-width: 720px !important;
+}
+
+.community-pulse-button {
+  flex: 0 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 46px !important;
+  padding: 12px 18px !important;
+  border: 1px solid #84CEC3 !important;
+  border-radius: 10px !important;
+  background: #F3FBFA !important;
+  color: #2F5F5A !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+  font-weight: 850 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.community-pulse-button:hover {
+  background: #E7F7F5 !important;
+  border-color: #72BFB4 !important;
+  color: #264D49 !important;
+}
+
+@media (max-width: 1000px) {
+  .remaining-community-pulse {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 18px !important;
+  }
+}
+
+
+/* v38: ranked priority cards with model-risk line and detailed reasoning */
+.priority-head p {
+  max-width: 860px !important;
+}
+
+.focus-card.ranked .focus-priority-bar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: #fff7ea !important;
+  color: #60410d !important;
+  border-bottom: 1px solid #f3d8a2 !important;
+}
+
+.focus-rank-number {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background: #FAB349 !important;
+  color: #1f2933 !important;
+  font-size: 17px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+.model-risk-line {
+  margin-top: 12px !important;
+  padding-left: 12px !important;
+  border-left: 4px solid #FAB349 !important;
+  color: #4b5563 !important;
+  font-weight: 700 !important;
+}
+
+.focus-reasoning-body {
+  margin: 14px auto 0 !important;
+  max-width: 880px !important;
+  text-align: left !important;
+  border-top: 1px solid #e0e5e5 !important;
+  padding-top: 16px !important;
+}
+
+.focus-reasoning-body h5 {
+  margin: 0 0 10px !important;
+  color: #1f2933 !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  letter-spacing: .04em !important;
+  text-transform: uppercase !important;
+}
+
+.focus-reasoning-body ol {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  gap: 8px !important;
+  list-style: none !important;
+}
+
+.focus-reasoning-body li {
+  display: grid !important;
+  grid-template-columns: 28px 1fr !important;
+  gap: 10px !important;
+  align-items: start !important;
+  color: #4b5563 !important;
+  font-size: 14.5px !important;
+  line-height: 1.45 !important;
+}
+
+.focus-reasoning-body li span {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+  background: #f6f7f7 !important;
+  border: 1px solid #d8dddd !important;
+  color: #606060 !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+}
+
+.focus-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-top: 14px !important;
+}
+
+.focus-tags span {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 30px !important;
+  padding: 6px 10px !important;
+  border-radius: 999px !important;
+  background: #fff6e6 !important;
+  border: 1px solid #FAB349 !important;
+  color: #60410d !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+}
+
+.focus-card.ranked .focus-reco-row b {
+  background: #F3FBFA !important;
+  border-color: #84CEC3 !important;
+  color: #2F5F5A !important;
+}
+
+.focus-card.ranked .focus-button {
+  background: #F3FBFA !important;
+  border-color: #84CEC3 !important;
+  color: #2F5F5A !important;
+}
+
+@media (max-width: 900px) {
+  .focus-reasoning-body li {
+    grid-template-columns: 24px 1fr !important;
+  }
+}
+
+
+/* v39: neutral card design, less competing hierarchy, stronger under-60% risk callout */
+.focus-card.ranked {
+  border: 1px solid #d7dde3 !important;
+  background: #ffffff !important;
+  border-left: 5px solid #c2410c !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 0 rgba(17,24,39,.04), 0 6px 16px rgba(17,24,39,.035) !important;
+}
+
+.focus-card.ranked .focus-priority-bar {
+  background: #f8fafc !important;
+  color: #111827 !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding: 12px 24px !important;
+  font-size: 13px !important;
+}
+
+.focus-rank-number {
+  background: #111827 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  width: 34px !important;
+  height: 34px !important;
+}
+
+.focus-inner {
+  padding: 24px 28px 24px !important;
+}
+
+.focus-reco-row {
+  margin-bottom: 14px !important;
+  grid-template-columns: auto 1fr auto !important;
+}
+
+.focus-reco-row span {
+  color: #6b7280 !important;
+}
+
+.focus-rule {
+  background: #e5e7eb !important;
+}
+
+.focus-card.ranked .focus-reco-row b {
+  background: #f3f4f6 !important;
+  border: 1px solid #d1d5db !important;
+  color: #374151 !important;
+  border-radius: 8px !important;
+  padding: 7px 11px !important;
+  font-size: 13px !important;
+}
+
+.focus-main {
+  grid-template-columns: minmax(0, 1fr) 255px !important;
+  gap: 28px !important;
+  align-items: start !important;
+}
+
+.focus-copy h4 {
+  font-size: 32px !important;
+  margin-bottom: 8px !important;
+  color: #111827 !important;
+}
+
+.focus-copy > p:not(.model-risk-line) {
+  font-size: 15.5px !important;
+  line-height: 1.5 !important;
+  color: #4b5563 !important;
+  max-width: 760px !important;
+}
+
+.model-risk-line {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 14px 0 12px !important;
+  padding: 13px 15px !important;
+  border: 1px solid #fca5a5 !important;
+  border-left: 5px solid #dc2626 !important;
+  border-radius: 10px !important;
+  background: #fff5f5 !important;
+  color: #7f1d1d !important;
+  font-size: 16px !important;
+  line-height: 1.35 !important;
+  font-weight: 750 !important;
+}
+
+.model-risk-line::before {
+  content: "Risk";
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 26px;
+  padding: 0 9px;
+  border-radius: 999px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.risk-emphasis {
+  color: #991b1b !important;
+  font-size: 18px !important;
+  font-weight: 950 !important;
+  white-space: nowrap !important;
+}
+
+.focus-stats {
+  margin-top: 10px !important;
+  gap: 10px !important;
+  color: #6b7280 !important;
+  font-size: 14px !important;
+}
+
+.focus-stats span {
+  padding-right: 12px !important;
+  border-right: 1px solid #e5e7eb !important;
+}
+
+.focus-stats span:last-child {
+  border-right: 0 !important;
+}
+
+.focus-stats strong {
+  color: #111827 !important;
+  font-size: 17px !important;
+}
+
+.focus-stats .negative {
+  color: #dc2626 !important;
+}
+
+.focus-opportunity {
+  text-align: left !important;
+  padding-top: 36px !important;
+  border-left: 1px solid #e5e7eb !important;
+  padding-left: 24px !important;
+}
+
+.focus-opportunity h5 {
+  color: #6b7280 !important;
+  font-size: 12px !important;
+  margin-bottom: 9px !important;
+}
+
+.focus-opportunity-value {
+  color: #166534 !important;
+  font-size: 36px !important;
+}
+
+.focus-opportunity-value span {
+  font-size: 17px !important;
+}
+
+.focus-opportunity p {
+  margin-top: 10px !important;
+  color: #4b5563 !important;
+  font-size: 13.5px !important;
+  line-height: 1.4 !important;
+}
+
+.focus-action-grid {
+  gap: 22px !important;
+  margin-top: 22px !important;
+  padding-top: 18px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.focus-do,
+.focus-dont {
+  min-height: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 0 0 14px !important;
+}
+
+.focus-do {
+  border-left: 4px solid #16a34a !important;
+}
+
+.focus-dont {
+  border-left: 4px solid #dc2626 !important;
+}
+
+.focus-do h5,
+.focus-dont h5 {
+  display: block !important;
+  margin: 0 0 8px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  color: #111827 !important;
+  font-size: 14px !important;
+  letter-spacing: .02em !important;
+}
+
+.focus-do p,
+.focus-dont p {
+  font-size: 14.5px !important;
+  line-height: 1.48 !important;
+  color: #4b5563 !important;
+}
+
+.focus-reasoning {
+  text-align: left !important;
+  margin-top: 18px !important;
+  padding-top: 14px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.focus-reasoning summary {
+  color: #374151 !important;
+  font-size: 15px !important;
+  font-weight: 850 !important;
+}
+
+.focus-reasoning-body {
+  max-width: none !important;
+  border-top: 0 !important;
+  padding-top: 12px !important;
+}
+
+.focus-reasoning-body li {
+  font-size: 14px !important;
+  color: #4b5563 !important;
+}
+
+.focus-tags span {
+  background: #f3f4f6 !important;
+  border-color: #d1d5db !important;
+  color: #4b5563 !important;
+  border-radius: 8px !important;
+  font-weight: 750 !important;
+}
+
+.focus-footer {
+  margin-top: 18px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.focus-card.ranked .focus-button {
+  background: #ffffff !important;
+  border-color: #d1d5db !important;
+  color: #111827 !important;
+  border-radius: 8px !important;
+}
+
+.focus-feedback {
+  color: #6b7280 !important;
+}
+
+@media (max-width: 900px) {
+  .focus-main {
+    grid-template-columns: 1fr !important;
+  }
+  .focus-opportunity {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    border-left: 0 !important;
+  }
+  .focus-reco-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  .focus-rule {
+    display: none !important;
+  }
+}
+
+
+/* v40: remove priority banner and flatten card hierarchy */
+.community-table {
+  counter-reset: priority-card !important;
+  gap: 18px !important;
+}
+
+.focus-card.ranked {
+  counter-increment: priority-card !important;
+  border: 1px solid #d7dde3 !important;
+  border-left: 5px solid #c2410c !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 0 rgba(17,24,39,.04), 0 4px 12px rgba(17,24,39,.035) !important;
+  overflow: visible !important;
+}
+
+/* Remove the yellow top banner entirely */
+.focus-card.ranked .focus-priority-bar {
+  display: none !important;
+}
+
+/* Make the card itself the only visible container */
+.focus-inner {
+  padding: 24px 28px !important;
+  background: transparent !important;
+}
+
+/* Put rank beside the community name instead of in a banner */
+.focus-copy h4 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 10px !important;
+}
+
+.focus-copy h4::before {
+  content: counter(priority-card) !important;
+  flex: 0 0 auto !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 8px !important;
+  background: #111827 !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+}
+
+/* Reduce visual competition in the recommendation row */
+.focus-reco-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.focus-reco-row span {
+  color: #6b7280 !important;
+  font-size: 12px !important;
+  letter-spacing: .08em !important;
+}
+
+.focus-rule {
+  display: none !important;
+}
+
+.focus-card.ranked .focus-reco-row b {
+  border: 0 !important;
+  background: transparent !important;
+  color: #111827 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 15px !important;
+  font-weight: 850 !important;
+}
+
+/* Flatten the risk callout: keep it prominent, but not another box */
+.model-risk-line {
+  margin: 14px 0 12px !important;
+  padding: 0 0 0 14px !important;
+  border: 0 !important;
+  border-left: 5px solid #dc2626 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #7f1d1d !important;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  font-weight: 750 !important;
+}
+
+.model-risk-line::before {
+  content: none !important;
+}
+
+.risk-emphasis {
+  display: inline !important;
+  color: #b91c1c !important;
+  font-size: 19px !important;
+  font-weight: 950 !important;
+  background: #fee2e2 !important;
+  padding: 1px 6px !important;
+  border-radius: 5px !important;
+  white-space: nowrap !important;
+}
+
+/* Flatten sales stats: text row, not a chip row */
+.focus-stats {
+  margin-top: 10px !important;
+  padding-top: 10px !important;
+  border-top: 1px solid #e5e7eb !important;
+  gap: 14px !important;
+  color: #6b7280 !important;
+}
+
+.focus-stats span {
+  padding-right: 14px !important;
+  border-right: 1px solid #e5e7eb !important;
+}
+
+/* Remove side-card feel from opportunity block */
+.focus-main {
+  grid-template-columns: minmax(0, 1fr) 250px !important;
+  gap: 28px !important;
+}
+
+.focus-opportunity {
+  border-left: 1px solid #e5e7eb !important;
+  padding-left: 24px !important;
+  padding-top: 30px !important;
+  background: transparent !important;
+}
+
+/* Guidance is no longer boxed */
+.focus-action-grid {
+  margin-top: 18px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid #e5e7eb !important;
+  gap: 24px !important;
+}
+
+.focus-do,
+.focus-dont {
+  background: transparent !important;
+  border-radius: 0 !important;
+  min-height: 0 !important;
+  padding: 0 0 0 14px !important;
+}
+
+/* Keep reasoning visually light */
+.focus-reasoning {
+  margin-top: 16px !important;
+  padding-top: 12px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.focus-reasoning-body {
+  border-top: 0 !important;
+  padding-top: 10px !important;
+}
+
+.focus-reasoning-body li span {
+  background: transparent !important;
+  border: 1px solid #d1d5db !important;
+}
+
+/* Tags are quiet metadata, not boxes */
+.focus-tags {
+  gap: 7px !important;
+}
+
+.focus-tags span {
+  background: transparent !important;
+  border: 1px solid #d1d5db !important;
+  color: #4b5563 !important;
+  border-radius: 999px !important;
+  padding: 5px 9px !important;
+}
+
+/* Footer is a simple utility row */
+.focus-footer {
+  margin-top: 16px !important;
+  padding-top: 14px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.focus-card.ranked .focus-button {
+  background: transparent !important;
+  border: 1px solid #d1d5db !important;
+  color: #111827 !important;
+  border-radius: 8px !important;
+}
+
+@media (max-width: 900px) {
+  .focus-main {
+    grid-template-columns: 1fr !important;
+  }
+  .focus-opportunity {
+    border-left: 0 !important;
+    border-top: 1px solid #e5e7eb !important;
+    padding-left: 0 !important;
+    padding-top: 14px !important;
+  }
+  .focus-copy h4 {
+    align-items: flex-start !important;
+  }
+}
+
+
+/* v41: further flatten priority section + make under-60% emphasis inline only */
+
+/* Remove section-level frames around community area */
+.community-group,
+.community-group.report-group,
+#community.report-group,
+.priority-card,
+.community-table {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: visible !important;
+}
+
+/* Priority items become clean rows with separators, not cards inside cards */
+.focus-card.ranked {
+  border: 0 !important;
+  border-left: 4px solid #c2410c !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.focus-card.ranked + .focus-card.ranked {
+  margin-top: 10px !important;
+  padding-top: 18px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.focus-inner {
+  padding: 0 0 18px 20px !important;
+  background: transparent !important;
+}
+
+/* Reduce internal “box” feeling */
+.focus-main,
+.focus-action-grid,
+.focus-footer,
+.focus-reasoning,
+.focus-stats {
+  border-color: #e5e7eb !important;
+}
+
+.focus-opportunity {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border-left: 1px solid #e5e7eb !important;
+}
+
+.focus-action-grid {
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.focus-do,
+.focus-dont,
+.focus-reasoning-body,
+.focus-tags span,
+.focus-card.ranked .focus-button,
+.focus-card.ranked .focus-reco-row b {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Recommendation action: plain text, not a badge */
+.focus-card.ranked .focus-reco-row b {
+  border: 0 !important;
+  padding: 0 !important;
+  color: #111827 !important;
+}
+
+/* Risk line: inline sentence only; no alert box */
+.model-risk-line {
+  display: block !important;
+  margin: 10px 0 12px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #4b5563 !important;
+  font-size: 15.5px !important;
+  line-height: 1.5 !important;
+  font-weight: 650 !important;
+}
+
+.model-risk-line::before {
+  content: none !important;
+}
+
+.risk-emphasis {
+  display: inline !important;
+  color: #b91c1c !important;
+  font-size: inherit !important;
+  font-weight: 900 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  white-space: normal !important;
+}
+
+/* Keep rank visible but not another boxed element */
+.focus-copy h4::before {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #111827 !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  margin-right: 2px !important;
+}
+
+/* Quiet metadata chips */
+.focus-tags span {
+  border: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #6b7280 !important;
+}
+
+.focus-tags span + span::before {
+  content: "•";
+  margin-right: 7px;
+  color: #9ca3af;
+}
+
+/* Feedback and buttons should not create another visual container */
+.focus-footer {
+  margin-top: 14px !important;
+  padding-top: 12px !important;
+}
+
+.focus-card.ranked .focus-button {
+  border: 0 !important;
+  padding: 0 !important;
+  color: #111827 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+.focus-feedback button {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+/* Do / Don't remain scan-friendly without panels */
+.focus-do,
+.focus-dont {
+  padding-left: 12px !important;
+}
+
+@media (max-width: 900px) {
+  .focus-inner {
+    padding-left: 14px !important;
+  }
+  .focus-opportunity {
+    border-left: 0 !important;
+    border-top: 1px solid #e5e7eb !important;
+  }
+}
+
+
+/* v42: remove red border from large priority cards */
+.focus-card.ranked {
+  border-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.focus-inner {
+  padding-left: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .focus-inner {
+    padding-left: 0 !important;
+  }
+}
+
+
+/* v43: use a subtle grey card border instead of red */
+.focus-card.ranked {
+  border: 1px solid #d7dde3 !important;
+  border-left: 1px solid #d7dde3 !important;
+  border-radius: 12px !important;
+  background: #ffffff !important;
+  padding: 0 !important;
+}
+
+.focus-inner {
+  padding: 22px 26px !important;
+}
+
+.focus-card.ranked + .focus-card.ranked {
+  margin-top: 16px !important;
+  padding-top: 0 !important;
+  border-top: 1px solid #d7dde3 !important;
+}
+
+@media (max-width: 900px) {
+  .focus-inner {
+    padding: 18px !important;
+  }
+}
+
+
+/* v44: restore circular rank badge for priority numbers */
+.focus-copy h4::before {
+  content: counter(priority-card) !important;
+  flex: 0 0 auto !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  border-radius: 50% !important;
+  background: #111827 !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  margin-right: 2px !important;
+}
+
+
+/* v45: remove Performance Outlook badge from email header */
+.email-brand {
+  justify-content: flex-start !important;
+}
+.email-brand .pill {
+  display: none !important;
+}
+
+
+/* v46: make Open community look more like a button */
+.focus-card.ranked .focus-button,
+.focus-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  min-height: 42px !important;
+  padding: 11px 16px !important;
+  border: 1px solid #c7cdd4 !important;
+  border-radius: 10px !important;
+  background: #f8fafc !important;
+  color: #111827 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-weight: 850 !important;
+  text-decoration: none !important;
+  box-shadow: 0 1px 0 rgba(17,24,39,.04) !important;
+}
+
+.focus-card.ranked .focus-button:hover,
+.focus-button:hover {
+  background: #eef2f6 !important;
+  border-color: #aeb8c3 !important;
+}
+
+.focus-card.ranked .focus-button span,
+.focus-button span {
+  font-size: 15px !important;
+  line-height: 1 !important;
+}
+
+
+/* v47: start Forecast Movement with current vs previous sales forecast */
+.forecast-compare-strip {
+  display: grid !important;
+  grid-template-columns: 220px 1fr !important;
+  gap: 24px !important;
+  align-items: center !important;
+  margin: 0 0 16px !important;
+  padding: 16px 18px !important;
+  border: 1px solid #d7dde3 !important;
+  border-radius: 12px !important;
+  background: #ffffff !important;
+}
+
+.forecast-compare-label span {
+  display: block !important;
+  color: #6b7280 !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  font-weight: 850 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
+}
+
+.forecast-compare-label strong {
+  display: block !important;
+  color: #111827 !important;
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+}
+
+.forecast-compare-values {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) minmax(130px, .55fr) !important;
+  gap: 16px !important;
+  align-items: center !important;
+}
+
+.forecast-compare-values div {
+  min-width: 0 !important;
+}
+
+.forecast-compare-values span {
+  display: block !important;
+  color: #6b7280 !important;
+  font-size: 12px !important;
+  line-height: 1.1 !important;
+  font-weight: 850 !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 5px !important;
+}
+
+.forecast-compare-values strong {
+  display: block !important;
+  color: #111827 !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  font-weight: 900 !important;
+  letter-spacing: -.04em !important;
+}
+
+.forecast-compare-values small {
+  display: block !important;
+  color: #4b5563 !important;
+  font-size: 14px !important;
+  line-height: 1.3 !important;
+  margin-top: 5px !important;
+}
+
+.forecast-arrow {
+  color: #9ca3af !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  padding-top: 14px !important;
+}
+
+.forecast-delta {
+  padding-left: 16px !important;
+  border-left: 1px solid #e5e7eb !important;
+}
+
+.forecast-delta strong {
+  color: #4b5563 !important;
+}
+
+@media (max-width: 1000px) {
+  .forecast-compare-strip {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .forecast-compare-values {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .forecast-arrow {
+    display: none !important;
+  }
+  .forecast-delta {
+    border-left: 0 !important;
+    border-top: 1px solid #e5e7eb !important;
+    padding-left: 0 !important;
+    padding-top: 12px !important;
+  }
+}
+
+
+/* v49: language audit pass - support simpler, easier-to-scan copy */
+.focus-opportunity h5 {
+  content: none !important;
+}
+.focus-opportunity p {
+  max-width: 260px !important;
+}
+.focus-copy > p:not(.model-risk-line),
+.focus-do p,
+.focus-dont p,
+.focus-opportunity p {
+  line-height: 1.48 !important;
+}
+.focus-reasoning-body li {
+  line-height: 1.42 !important;
+}
+.model-risk-line {
+  font-weight: 700 !important;
+}
+.risk-emphasis {
+  color: #b91c1c !important;
+  font-weight: 900 !important;
+}
+.change-card li {
+  line-height: 1.45 !important;
+}
+
 </style>
 </head>
 <body>
@@ -3247,12 +4322,12 @@ button[style*="#009999"] {
     <div class="email-shell">
       <div class="email-meta"><span>From: OpenHouse.ai</span><span>May 13, 2026</span></div>
       <div class="email-body">
-        <div class="email-brand"><strong>OpenHouse.ai</strong><span class="pill">Performance Outlook</span></div>
-        <h1>New Orlando Outlook is ready: Next 90-day Forecast is ahead of target, but current May pace and community-level gaps need attention.</h1>
+        <div class="email-brand"><strong>OpenHouse.ai</strong></div>
+        <h1>New Orlando Outlook is ready: the 90-day forecast is ahead of target, but May pace and key communities need attention.</h1>
         <div class="email-focus email-focus-highlight">
-          <strong>Investigate The Reserve At Hammock Oaks, Deland, and Lake County Communities first.</strong>
+          <strong>Review Lake Deer Estates, Lake County Communities, DeLand, and The Reserve at Hammock Oaks first.</strong>
         </div>
-        <a href="#" class="email-cta" data-screen-link="outlook">Open May 13 Outlook</a>
+        <a href="#" class="email-cta" data-screen-link="outlook">Open May 13 Report</a>
         <div class="email-metadata"><span>Maronda Orlando</span><span>Report Date May 13, 2026</span></div>
       </div>
     </div>
@@ -3279,7 +4354,7 @@ button[style*="#009999"] {
   <div class="section-rule"></div>
   <section aria-labelledby="division-summary-title" class="section-title big-gap">
     <div aria-hidden="true" class="section-icon"><div class="mini-bars"><span></span><span></span><span></span></div></div>
-    <div><p class="eyebrow"></p><h2 id="division-summary-title">Division Performance Outlook</h2><p>Forecast averaging 2 sales/mo above target; YTD pacing ahead of target.</p></div>
+    <div><p class="eyebrow"></p><h2 id="division-summary-title">Division Performance Outlook</h2><p>The 90-day forecast is ahead of target, but May pace needs attention.</p></div>
   </section>
   <section aria-label="Key performance indicators" class="kpi-grid">
     <article class="card kpi-card danger pace-kpi">
@@ -3302,24 +4377,47 @@ button[style*="#009999"] {
   <div class="section-rule"></div>
   <section aria-labelledby="changes-title" class="section-title">
     <div aria-hidden="true" class="section-icon"><div class="mini-bars"><span></span><span></span><span></span></div></div>
-    <div><p class="eyebrow">Forecast Movement</p><h2 id="changes-title">What Changed Since April 29</h2><p>Leading indicator movement since previous forecast</p></div>
+    <div><p class="eyebrow">Forecast Movement</p><h2 id="changes-title">What Changed Since April 29</h2><p>What moved since the last forecast</p></div>
   </section>
+  <div class="forecast-compare-strip" aria-label="Current versus previous sales forecast">
+    <div class="forecast-compare-label">
+      <span>Forecast change</span>
+      <strong>Current vs previous</strong>
+    </div>
+    <div class="forecast-compare-values">
+      <div>
+        <span>Previous forecast</span>
+        <strong>72 homes</strong>
+        <small>April 29 · 24 homes/month</small>
+      </div>
+      <div class="forecast-arrow">→</div>
+      <div>
+        <span>Current forecast</span>
+        <strong>72 homes</strong>
+        <small>May 13 · 24 homes/month</small>
+      </div>
+      <div class="forecast-delta">
+        <span>No change</span>
+        <strong>0 homes</strong>
+      </div>
+    </div>
+  </div>
   <div class="change-grid">
     <article class="change-card changed">
       <h3>What Changed</h3>
       <ul>
-        <li>Made appointments shifted into a steeper downward trajectory.</li>
-        <li>Prequalified leads declined to mid-to-low levels.</li>
-        <li>Total lead generation softened, including OSC and call-in sources.</li>
-        <li>Organic session duration reached an annual peak, offsetting some paid-duration weakness.</li>
+        <li>New appointments are falling faster.</li>
+        <li>Prequalified leads are down.</li>
+        <li>Total leads are down, including OSC and call-ins.</li>
+        <li>Organic visitors are spending more time on site.</li>
       </ul>
     </article>
     <article class="change-card same">
       <h3>What Did Not Change</h3>
       <ul>
-        <li>Held appointments remain relatively high and stable.</li>
-        <li>Overall web traffic remains stable, with a slight month-over-month increase.</li>
-        <li>The May 13 forecast baseline remains about 72 homes over 90 days, or 24 homes/month.</li>
+        <li>Held appointments are still high and steady.</li>
+        <li>Overall web traffic is stable and slightly up month over month.</li>
+        
       </ul>
     </article>
   </div>
@@ -3327,7 +4425,7 @@ button[style*="#009999"] {
   
   <section class="detail-grid" id="sales-forecast">
     <article class="card panel">
-      <div class="panel-head"><div><h3>Forecast by Period</h3><p class="subtitle">Range, target, and forecast point</p></div></div>
+      <div class="panel-head"><div><h3>Forecast by Period</h3><p class="subtitle">Forecast, range, and target</p></div></div>
       <div class="forecast-periods">
         <div class="period"><div class="period-top"><div class="period-title">Next 30 Days</div><div class="period-status">4 ahead</div></div><div class="range"><div class="range-line"></div><div class="tick target"></div><div class="bubble">32</div><div class="range-foot"><span class="min">27</span><span class="target-text">Target 28</span><span class="max">37</span></div></div></div>
         <div class="period"><div class="period-top"><div class="period-title">30-60 Days</div><div class="period-status">2 ahead</div></div><div class="range medium"><div class="range-line"></div><div class="tick target mid"></div><div class="bubble">24</div><div class="range-foot"><span class="min">20</span><span class="target-text">Target 22</span><span class="max">28</span></div></div></div>
@@ -3336,7 +4434,7 @@ button[style*="#009999"] {
     </article>
   </section>
   <section aria-labelledby="forecast-chart-title" class="card wide-chart-card" id="forecast-chart">
-    <div class="chart-head"><h3 id="forecast-chart-title">90-Day Sales Forecast</h3><p>Rolling 90-day actuals vs forecast with confidence interval</p></div>
+    <div class="chart-head"><h3 id="forecast-chart-title">90-Day Sales Forecast</h3><p>90-day actuals, forecast, and range</p></div>
     <svg aria-label="90-day sales forecast chart" role="img" viewBox="0 0 1120 430">
 <line class="chart-grid" x1="52" x2="1080" y1="324.0" y2="324.0"></line><text class="chart-label" text-anchor="end" x="34" y="328.0">0</text><text class="chart-label" x="1092" y="328.0">0</text>
 <line class="chart-grid" x1="52" x2="1080" y1="251.0" y2="251.0"></line><text class="chart-label" text-anchor="end" x="34" y="255.0">10</text><text class="chart-label" x="1092" y="255.0">10</text>
@@ -3559,58 +4657,71 @@ button[style*="#009999"] {
   <div class="section-rule"></div>
   <section aria-labelledby="community-title" class="section-title">
     <div aria-hidden="true" class="section-icon"><div class="mini-home"><span class="body"></span><span class="roof"></span><span class="door"></span></div></div>
-    <div><p class="eyebrow"></p><h2 id="community-title">Community Diagnostics</h2><p>Which communities need attention, and where to review first.</p></div>
+    <div><p class="eyebrow"></p><h2 id="community-title">Community Diagnostics</h2><p>Start with the communities most likely to miss target.</p></div>
   </section>
   <section aria-labelledby="priority-title" class="card priority-card">
-    <div class="priority-head"><p class="eyebrow">Immediate Focus</p><h3 id="priority-title">Priority Communities</h3><p>Communities most likely to need action this cycle.</p></div>
-    <div class="explain-note"><div><span class="note-marker">*</span> <strong>Target outlook:</strong> Critical 0-34% · At Risk 35-64% · Monitor Closely 65-79% · On Track 80-100%. This measures the likelihood that the community will hit its sales target.</div></div>
-    <div class="explain-note"><div><span class="note-marker">*</span> <strong>Client Priorities:</strong> No Client Priorities added yet. If a client adds one, it appears above OpenHouse suggested priorities while the OpenHouse diagnostic signal remains visible.</div></div>
+    <div class="priority-head"><p class="eyebrow">Focus</p><h3 id="priority-title">Priority Communities</h3><p>Ranked by which communities need review first.</p></div>
     <div class="community-table">
 
-
-
-
-<article class="focus-card high" id="reserve-hammock-oaks">
-  <div class="focus-priority-bar">High priority</div>
+<article class="focus-card ranked" id="lake-deer-estates">
+  <div class="focus-priority-bar"><span class="focus-rank-number">1</span><span>Priority Community</span></div>
   <div class="focus-inner">
     <div class="focus-reco-row">
-      <span>Recommended Action</span>
+      <span>Recommended review</span>
       <div class="focus-rule"></div>
-      <b>Investigate web-to-lead</b>
+      <b>Investigate appointment-to-sale</b>
     </div>
 
     <div class="focus-main">
       <div class="focus-copy">
-        <h4>The Reserve At Hammock Oaks</h4>
-        <p>Traffic appears to be available, but very few shoppers are raising their hand. This looks less like a broad visibility issue and more like a website, offer, or positioning question to review before adding more traffic.</p>
+        <h4>Lake Deer Estates</h4>
+        <p>Lake Deer has the largest sales gap. Buyers are booking appointments, but they are not converting to sales.</p>
+        <p class="model-risk-line">Our Community Foresight Model estimates this community has <span class="risk-emphasis">under a 60% chance</span> of hitting its next 90-day target.</p>
         <div class="focus-stats">
-          <span>Sales <strong>2</strong></span>
-          <span>Target <strong>4</strong></span>
-          <span>Gap <strong class="negative">-2</strong></span>
+          <span>Sales <strong>0</strong></span>
+          <span>Target <strong>3.61</strong></span>
+          <span>Gap <strong class="negative">-3.61</strong></span>
         </div>
       </div>
 
       <aside class="focus-opportunity">
-        <h5>Est. Sales Opportunity</h5>
-        <div class="focus-opportunity-value">+2 <span>sales</span></div>
-        <p>Traffic and appointment-to-sale appear stronger than web-to-lead. Improving the lead path may add sales without requiring more visibility.</p>
+        <h5>Potential Sales Upside</h5>
+        <div class="focus-opportunity-value">+3 <span>sales</span></div>
+        <p>13 appointments produced 0 sales. If Lake Deer closed closer to benchmark, it could recover about 2–3 sales.</p>
       </aside>
     </div>
 
     <div class="focus-action-grid">
       <div class="focus-do">
         <h5>Do next</h5>
-        <p>Review the Hammock Oaks page, creative, and incentive. The first screen should make the tradeoff obvious: oversized homesites, included 3-car garages, resort amenities, lawn maintenance, and proximity to The Villages.</p>
+        <p>Review the last 30 days of appointments and tag why each one did not close. Also check the page and quick move-in offer so buyers understand the location, Spanish-language messaging, and rate/APR offer before they book.</p>
       </div>
       <div class="focus-dont">
-        <h5>Do not yet</h5>
-        <p>Do not add general traffic yet. Visibility appears to be enough; more broad traffic may just add anonymous browsing unless the offer and lead path improve.</p>
+        <h5>Hold off</h5>
+        <p>Do not add broad paid traffic or cut price yet. More demand may only create more appointments that do not close.</p>
       </div>
     </div>
 
     <details class="focus-reasoning">
-      <summary>Show reasoning</summary>
-      <p>Traffic appears present, while web-to-lead conversion is below target. The first review should focus on message fit, CTA clarity, and lead capture before increasing visibility.</p>
+      <summary>Show why</summary>
+      <div class="focus-reasoning-body">
+        <h5>Why this is ranked here</h5>
+        <ol>
+          <li><span>1</span>Sales pace: 0 sales vs 3.61 target this period; 11 sales vs 12 YTD.</li>
+          <li><span>2</span>Traffic: 1,648 users vs about 4,516 needed. Traffic is short, but it is not the only issue.</li>
+          <li><span>3</span>Web to lead: 14 leads from 1,648 users; 0.85% vs 1.0% benchmark.</li>
+          <li><span>4</span>Lead to appointment: 13 appointments from 14 leads; 92.9% vs 40% benchmark. This is very strong.</li>
+          <li><span>5</span>Appointment to sale: 0 sales from 13 appointments; 0% vs 20% benchmark. This is the main leak.</li>
+          <li><span>6</span>Website / offer: The page has a strong story, but location and offer expectations should be checked.</li>
+        </ol>
+        <div class="focus-tags">
+          <span>Largest gap</span>
+          <span>Appointments not closing</span>
+          <span>Special-rate QMIs</span>
+          <span>Spanish-language cue</span>
+          <span>Location expectations</span>
+        </div>
+      </div>
     </details>
 
     <div class="focus-footer">
@@ -3618,7 +4729,7 @@ button[style*="#009999"] {
         <a class="focus-button" href="#">Open community <span>→</span></a>
       </div>
       <div class="focus-feedback">
-        <span>How was this recommendation?</span>
+        <span>Was this useful?</span>
         <button aria-label="Useful recommendation">👍</button>
         <button aria-label="Not useful recommendation">👎</button>
       </div>
@@ -3626,11 +4737,84 @@ button[style*="#009999"] {
   </div>
 </article>
 
-<article class="focus-card high" id="deland">
-  <div class="focus-priority-bar">High priority</div>
+<article class="focus-card ranked" id="lake-county-communities">
+  <div class="focus-priority-bar"><span class="focus-rank-number">2</span><span>Priority Community</span></div>
   <div class="focus-inner">
     <div class="focus-reco-row">
-      <span>Recommended Action</span>
+      <span>Recommended review</span>
+      <div class="focus-rule"></div>
+      <b>Add qualified traffic</b>
+    </div>
+
+    <div class="focus-main">
+      <div class="focus-copy">
+        <h4>Lake County Communities</h4>
+        <p>Lake County is behind this period and YTD. The page converts visitors into leads well, but not enough qualified buyers are reaching it.</p>
+        <p class="model-risk-line">Our Community Foresight Model estimates this community has <span class="risk-emphasis">under a 60% chance</span> of hitting its next 90-day target.</p>
+        <div class="focus-stats">
+          <span>Sales <strong>1</strong></span>
+          <span>Target <strong>3.61</strong></span>
+          <span>Gap <strong class="negative">-2.61</strong></span>
+        </div>
+      </div>
+
+      <aside class="focus-opportunity">
+        <h5>Potential Sales Upside</h5>
+        <div class="focus-opportunity-value">+3 <span>sales</span></div>
+        <p>The page converts visitors into leads well, but not enough qualified buyers are reaching it. More qualified traffic could help recover much of the sales gap.</p>
+      </aside>
+    </div>
+
+    <div class="focus-action-grid">
+      <div class="focus-do">
+        <h5>Do next</h5>
+        <p>Send more qualified demand to Lake County if homesites are available. Simplify the page so buyers can quickly choose the right location and understand the no HOA/CDD, private homesite, and larger-lot story.</p>
+      </div>
+      <div class="focus-dont">
+        <h5>Hold off</h5>
+        <p>Do not treat this as a sales or price problem first. The bigger issue appears to be getting more of the right buyers to the page.</p>
+      </div>
+    </div>
+
+    <details class="focus-reasoning">
+      <summary>Show why</summary>
+      <div class="focus-reasoning-body">
+        <h5>Why this is ranked here</h5>
+        <ol>
+          <li><span>1</span>Sales pace: 1 sale vs 3.61 target this period; 8 sales vs 15 YTD.</li>
+          <li><span>2</span>Traffic: 923 users vs about 4,516 needed. This is the largest traffic gap in the priority list.</li>
+          <li><span>3</span>Web to lead: 18 leads from 923 users; 1.95% vs 1.0% benchmark. The page converts well.</li>
+          <li><span>4</span>Lead to appointment: 6 appointments from 18 leads; 33.3% vs 40% benchmark. Slightly below target.</li>
+          <li><span>5</span>Appointment to sale: 1 sale from 6 appointments; 16.7% vs 20% benchmark. Slightly below target.</li>
+          <li><span>6</span>Website / offer: The scattered-homesite story is strong, but the page asks buyers to make too many choices.</li>
+        </ol>
+        <div class="focus-tags">
+          <span>Needs qualified traffic</span>
+          <span>Scattered homesites</span>
+          <span>No HOA/CDD</span>
+          <span>Too many location choices</span>
+        </div>
+      </div>
+    </details>
+
+    <div class="focus-footer">
+      <div class="focus-buttons">
+        <a class="focus-button" href="#">Open community <span>→</span></a>
+      </div>
+      <div class="focus-feedback">
+        <span>Was this useful?</span>
+        <button aria-label="Useful recommendation">👍</button>
+        <button aria-label="Not useful recommendation">👎</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="focus-card ranked" id="deland">
+  <div class="focus-priority-bar"><span class="focus-rank-number">3</span><span>Priority Community</span></div>
+  <div class="focus-inner">
+    <div class="focus-reco-row">
+      <span>Recommended review</span>
       <div class="focus-rule"></div>
       <b>Investigate appointment-to-sale</b>
     </div>
@@ -3638,7 +4822,8 @@ button[style*="#009999"] {
     <div class="focus-main">
       <div class="focus-copy">
         <h4>DeLand</h4>
-        <p>DeLand is behind YTD with no sales this period. Traffic is short but web-to-lead is healthy, and five appointments still closed zero — so demand alone may not fix the gap.</p>
+        <p>DeLand is behind YTD and has no sales this period. Traffic is short, but the bigger concern is that five appointments produced zero sales.</p>
+        <p class="model-risk-line">Our Community Foresight Model estimates this community has <span class="risk-emphasis">under a 60% chance</span> of hitting its next 90-day target.</p>
         <div class="focus-stats">
           <span>Sales <strong>0</strong></span>
           <span>Target <strong>1.81</strong></span>
@@ -3647,26 +4832,42 @@ button[style*="#009999"] {
       </div>
 
       <aside class="focus-opportunity">
-        <h5>Est. Sales Opportunity</h5>
+        <h5>Potential Sales Upside</h5>
         <div class="focus-opportunity-value">+2 <span>sales</span></div>
-        <p>The gap is 1.81 homes; closing five appointments at benchmark implies about one sale, before the traffic shortfall.</p>
+        <p>DeLand had 5 appointments and 0 sales. If those appointments closed closer to benchmark, it could recover about 1–2 sales.</p>
       </aside>
     </div>
 
     <div class="focus-action-grid">
       <div class="focus-do">
         <h5>Do next</h5>
-        <p>Review the five recent appointments and 30 days of leads to find the blocker — fit, lot/path complexity, price/payment, location, financing, or follow-up.</p>
+        <p>Review the five recent appointments and the last 30 days of leads. Look for the blocker: fit, lot path, price/payment, location, financing, or follow-up. If the issue is not price or product, run a targeted demand push around DeLand’s clearest story.</p>
       </div>
       <div class="focus-dont">
-        <h5>Do not yet</h5>
-        <p>Do not just add traffic until the zero-close pattern is understood. If buyers object to lot path, payment, or location, more shoppers may hit the same friction.</p>
+        <h5>Hold off</h5>
+        <p>Do not just add traffic until the zero-close pattern is understood. More shoppers may hit the same friction.</p>
       </div>
     </div>
 
     <details class="focus-reasoning">
-      <summary>Show reasoning</summary>
-      <p>The performance gap is clear, but the right lever is not fully clear from the forecast alone. That is why the recommendation is framed as an investigation into appointment outcomes before a broad traffic push.</p>
+      <summary>Show why</summary>
+      <div class="focus-reasoning-body">
+        <h5>Why this is ranked here</h5>
+        <ol>
+          <li><span>1</span>Sales pace: 0 sales vs 1.81 target this period; 5 sales vs 10 YTD.</li>
+          <li><span>2</span>Traffic: 955 users vs about 2,258 needed. Traffic is short.</li>
+          <li><span>3</span>Web to lead: 13 leads from 955 users; 1.36% vs 1.0% benchmark. Lead conversion is healthy.</li>
+          <li><span>4</span>Lead to appointment: 5 appointments from 13 leads; 38.5% vs 40% benchmark. Near target.</li>
+          <li><span>5</span>Appointment to sale: 0 sales from 5 appointments; 0% vs 20% benchmark.</li>
+          <li><span>6</span>Website / offer: The page has a strong but complex story: build on your lot, Maronda’s lot, or a lot Maronda helps find.</li>
+        </ol>
+        <div class="focus-tags">
+          <span>Scattered homesites</span>
+          <span>Traffic short</span>
+          <span>Appointments not closing</span>
+          <span>Complex buyer path</span>
+        </div>
+      </div>
     </details>
 
     <div class="focus-footer">
@@ -3674,7 +4875,7 @@ button[style*="#009999"] {
         <a class="focus-button" href="#">Open community <span>→</span></a>
       </div>
       <div class="focus-feedback">
-        <span>How was this recommendation?</span>
+        <span>Was this useful?</span>
         <button aria-label="Useful recommendation">👍</button>
         <button aria-label="Not useful recommendation">👎</button>
       </div>
@@ -3682,47 +4883,65 @@ button[style*="#009999"] {
   </div>
 </article>
 
-<article class="focus-card high" id="lake-county-communities">
-  <div class="focus-priority-bar">High priority</div>
+<article class="focus-card ranked" id="reserve-hammock-oaks">
+  <div class="focus-priority-bar"><span class="focus-rank-number">4</span><span>Priority Community</span></div>
   <div class="focus-inner">
     <div class="focus-reco-row">
-      <span>Recommended Action</span>
+      <span>Recommended review</span>
       <div class="focus-rule"></div>
-      <b>Investigate traffic quality</b>
+      <b>Investigate web-to-lead</b>
     </div>
 
     <div class="focus-main">
       <div class="focus-copy">
-        <h4>Lake County Communities</h4>
-        <p>Lake County is behind this period and YTD. The traffic gap is meaningful, but because this is a multi-location experience, the first review should also check whether buyers can quickly understand which location and home path fits them.</p>
+        <h4>The Reserve at Hammock Oaks</h4>
+        <p>Traffic is strong, and appointments are closing. The issue is that too few visitors become leads.</p>
+        <p class="model-risk-line">Our Community Foresight Model estimates this community has <span class="risk-emphasis">under a 60% chance</span> of hitting its next 90-day target.</p>
         <div class="focus-stats">
-          <span>Sales <strong>1</strong></span>
-          <span>Target <strong>3</strong></span>
-          <span>Gap <strong class="negative">-2</strong></span>
+          <span>Sales <strong>2</strong></span>
+          <span>Target <strong>2.71</strong></span>
+          <span>Gap <strong class="negative">-0.71</strong></span>
         </div>
       </div>
 
       <aside class="focus-opportunity">
-        <h5>Est. Sales Opportunity</h5>
-        <div class="focus-opportunity-value">+3 <span>sales</span></div>
-        <p>Recovering qualified demand could close much of the current-period gap if inventory and location fit support it.</p>
+        <h5>Potential Sales Upside</h5>
+        <div class="focus-opportunity-value">+2 <span>sales</span></div>
+        <p>Traffic is already strong, and appointments are closing. The opportunity is to turn more website visitors into leads and appointments.</p>
       </aside>
     </div>
 
     <div class="focus-action-grid">
       <div class="focus-do">
         <h5>Do next</h5>
-        <p>Review campaign/source mix and simplify routing across Lake County locations so buyers can quickly choose the right community or homesite path.</p>
+        <p>Review the Hammock Oaks page, community card, creative, and incentive. Make the first screen clearer: oversized homesites, included 3-car garages, resort amenities, lawn maintenance, and proximity to The Villages. Test lead-capture modules tied to the strongest hooks and available homes.</p>
       </div>
       <div class="focus-dont">
-        <h5>Do not yet</h5>
-        <p>Do not scale traffic before checking whether the landing experience is clear enough for buyers to self-select into the right location.</p>
+        <h5>Hold off</h5>
+        <p>Do not add general traffic yet. Visibility is already strong; the lead path needs to improve first.</p>
       </div>
     </div>
 
     <details class="focus-reasoning">
-      <summary>Show reasoning</summary>
-      <p>Traffic appears to be a meaningful constraint, but the multi-location setup can make traffic quality and page clarity just as important as raw volume.</p>
+      <summary>Show why</summary>
+      <div class="focus-reasoning-body">
+        <h5>Why this is ranked here</h5>
+        <ol>
+          <li><span>1</span>Sales pace: 2 sales vs 2.71 target this period; 10 sales vs 16 YTD.</li>
+          <li><span>2</span>Traffic: 3,663 users vs about 3,387 needed. Traffic is not the issue.</li>
+          <li><span>3</span>Web to lead: 11 leads from 3,663 users; 0.30% vs 1.0% benchmark. This is the main leak.</li>
+          <li><span>4</span>Lead to appointment: 3 appointments from 11 leads; 27.3% vs 40% benchmark.</li>
+          <li><span>5</span>Appointment to sale: 2 sales from 3 appointments; 66.7% vs 20% benchmark. Appointments are closing well.</li>
+          <li><span>6</span>Website / offer: The story is strong, but it needs to convert more visitors into leads.</li>
+        </ol>
+        <div class="focus-tags">
+          <span>Website / offer leak</span>
+          <span>Traffic strong</span>
+          <span>Near The Villages</span>
+          <span>3-car garages</span>
+          <span>Large homesites</span>
+        </div>
+      </div>
     </details>
 
     <div class="focus-footer">
@@ -3730,177 +4949,25 @@ button[style*="#009999"] {
         <a class="focus-button" href="#">Open community <span>→</span></a>
       </div>
       <div class="focus-feedback">
-        <span>How was this recommendation?</span>
+        <span>Was this useful?</span>
         <button aria-label="Useful recommendation">👍</button>
         <button aria-label="Not useful recommendation">👎</button>
       </div>
     </div>
-  </div>
-</article>
-
-
-<details class="queue-disclosure" id="community-queue-wrapper">
-  <summary>
-    <span>
-      <span class="eyebrow">Remaining Communities</span>
-      <strong>Community Queue</strong>
-      <small>Show all remaining communities and add one as a priority.</small>
-    </span>
-    <span class="queue-toggle-text"><span class="show-label">Show</span><span class="hide-label">Hide</span> queue</span>
-  </summary>
-  <div class="queue-disclosure-body">
-    <section data-section="community-queue-wrapper" aria-labelledby="remaining-communities-title" class="card community-roster-card">
-    
-    <div class="explain-note"><div><span class="note-marker">*</span> <strong>Target outlook:</strong> Critical 0-34% · At Risk 35-64% · Monitor Closely 65-79% · On Track 80-100%.</div></div>
-    <div class="roster-table"><div class="roster-section-label">Needs Attention</div>
-
-<article class="roster-mini-card watch">
-  <div class="roster-card-top"><div class="roster-community"><h4>Lake Deer Estates</h4><span class="roster-badge low">Unlikely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value bad">2</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">3</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value bad">11</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><span class="roster-target">12</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">8</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Traffic and appointment-to-sale both appear worth reviewing.</div><div class="roster-driver-alert">Needs Attention</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card watch">
-  <div class="roster-card-top"><div class="roster-community"><h4>Oakstone Farms</h4><span class="roster-badge low">Unlikely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value bad">1</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">3</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value bad">9</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">13</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">8</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Traffic and lead-to-appointment softness; strong appointment-to-sale offsets some risk.</div><div class="roster-driver-alert">Needs Attention</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card watch">
-  <div class="roster-card-top"><div class="roster-community"><h4>Coastal Communities</h4><span class="roster-badge low">Unlikely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value good">1</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">1</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value bad">2</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">5</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">3</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Traffic is strong, but traffic-to-lead appears weak.</div><div class="roster-driver-alert">Needs Attention</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card watch">
-  <div class="roster-card-top"><div class="roster-community"><h4>Villamar</h4><span class="roster-badge low">Unlikely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value bad">0</strong><span class="roster-meter"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">N/A</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value good">4</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">1</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">3</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Earlier YTD strength, limited current-period signal.</div><div class="roster-driver-alert">Needs Attention</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card alert">
-  <div class="roster-card-top"><div class="roster-community"><h4>Sorrento & Mount Dora</h4><span class="roster-badge low">Needs Attention</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value bad">0</strong><span class="roster-meter"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">1</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value bad">0</strong><span class="roster-meter"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">3</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">2</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">New community / data watch.</div><div class="roster-driver-alert">Needs Attention</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-<div class="roster-section-label">Watch</div>
-<article class="roster-mini-card watch">
-  <div class="roster-card-top"><div class="roster-community"><h4>Poinciana</h4><span class="roster-badge moderate">Some Risk to Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value bad">2</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">3</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value good">11</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">11</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">5</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Sales are generally holding; watch traffic.</div><div class="roster-driver-alert">Needs Attention</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-<div class="roster-section-label">On Track</div>
-<article class="roster-mini-card track">
-  <div class="roster-card-top"><div class="roster-community"><h4>Stillwater Cove</h4><span class="roster-badge high">Likely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value bad">2</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">3</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value bad">9</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">12</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">4</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Lead-to-appointment strength may offset top-of-funnel softness.</div><div class="roster-driver-alert good">Strength</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card track">
-  <div class="roster-card-top"><div class="roster-community"><h4>Villa Pass</h4><span class="roster-badge high">Likely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value good">7</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">4</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value good">22</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">16</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">8</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Strong lead-to-appointment and sales performance.</div><div class="roster-driver-alert good">Strength</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card track">
-  <div class="roster-card-top"><div class="roster-community"><h4>Woodland Ranch</h4><span class="roster-badge high">Likely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value good">7</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">4</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value good">20</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">16</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">5</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Strong downstream conversion is offsetting softer traffic.</div><div class="roster-driver-alert good">Strength</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card track">
-  <div class="roster-card-top"><div class="roster-community"><h4>Andover Ridge</h4><span class="roster-badge high">Likely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value bad">0</strong><span class="roster-meter"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">1</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value bad">2</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">3</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">1</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Small-volume community; limited signal.</div><div class="roster-driver-alert good">Strength</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
-  </div>
-</article>
-
-<article class="roster-mini-card track">
-  <div class="roster-card-top"><div class="roster-community"><h4>Hammock Reserve</h4><span class="roster-badge high">Likely to Hit Target</span></div></div>
-  <div class="roster-card-body">
-    <div class="roster-panel roster-performance">
-      <h5>Performance</h5>
-      <div class="roster-performance-line"><span class="roster-metric-label">30d</span><strong class="roster-metric-value good">2</strong><span class="roster-meter"><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><i class="green"></i><span class="roster-target">1</span></span></div>
-      <div class="roster-performance-line"><span class="roster-metric-label">YTD</span><strong class="roster-metric-value bad">4</strong><span class="roster-meter"><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class="red"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><span class="roster-target">6</span></span></div>
-    </div>
-    <div class="roster-panel roster-forecast"><h5>Next 90-Day Target</h5><div class="roster-forecast-value">1</div></div>
-    <div class="roster-panel roster-driver"><h5>Diagnostic Signal</h5><div class="roster-driver-title">Lead-to-appointment strength; small target.</div><div class="roster-driver-alert good">Strength</div><div class="roster-action"><a href="#" >Open community <span>→</span></a><a class="client-priority-action" href="#">Add as Priority</a></div></div>
   </div>
 </article>
 
     </div>
   </section>
+  <section id="community-queue-wrapper" class="remaining-community-pulse">
+  <div>
+    <p class="eyebrow">Remaining Communities</p>
+    <h3>Other Communities</h3>
+    <p>Open Community Pulse to review the rest of the communities.</p>
   </div>
-</details>
+  <a class="community-pulse-button" href="#">Open Community Pulse</a>
+</section>
+
 
 </section>
 
