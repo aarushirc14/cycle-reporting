@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Maronda Orlando Performance Outlook Report Prototype v33</title>
+<title>Maronda Orlando Performance Outlook Report Prototype v36</title>
 <style>
 
     :root {
@@ -3018,6 +3018,218 @@ main.page {
   }
 }
 
+
+/* v34: reduce teal/green clash by reserving green for signals and using softer brand accents */
+:root {
+  --brand-action-bg: #F4FBFA;
+  --brand-action-border: #84CEC3;
+  --brand-action-text: #3F4A4A;
+  --brand-accent: #84CEC3;
+  --brand-accent-dark: #007C7C;
+}
+
+/* Keep positive signals clearly green */
+.pill.green,
+.roster-badge.high,
+.roster-mini-card.track .roster-badge,
+.severity-badge.high,
+.period-status,
+.metric-value.good,
+.roster-metric-value.good,
+.cell-green,
+.delta.good,
+.opportunity-side .opportunity-value,
+.opportunity-value,
+.roster-mini-card.track .roster-forecast-value,
+.roster-mini-card.track .roster-driver-alert,
+.roster-driver-alert.good {
+  color: var(--signal-green-dark) !important;
+}
+
+/* Make OpenHouse UI actions neutral/brand-soft instead of signal-like teal */
+.top-jump-nav .top-jump-button,
+.top-jump-button,
+.action-link,
+.roster-action a,
+.client-priority-action,
+.queue-toggle-text,
+.reasoning summary {
+  background: var(--brand-action-bg) !important;
+  border-color: var(--brand-action-border) !important;
+  color: var(--brand-action-text) !important;
+}
+
+.top-jump-nav .top-jump-button:hover,
+.top-jump-button:hover,
+.action-link:hover,
+.roster-action a:hover,
+.client-priority-action:hover,
+.queue-toggle-text:hover {
+  background: #EAF7F5 !important;
+  border-color: #69BDB1 !important;
+  color: #303A3A !important;
+}
+
+/* Use Bermuda as the brand accent so it does not compete with green status */
+.section-icon {
+  background: #EFFAF8 !important;
+  border-color: #84CEC3 !important;
+  color: #007C7C !important;
+}
+.mini-bars span,
+.section-icon .mini-bars span {
+  background: #007C7C !important;
+}
+.recommended-rule {
+  background: #84CEC3 !important;
+}
+.recommendation-pill {
+  background: #F4FBFA !important;
+  border-color: #84CEC3 !important;
+  color: #3F4A4A !important;
+}
+
+/* Forecast line can remain brand-colored, but softer than signal green */
+.forecast-line {
+  stroke: #007C7C !important;
+}
+.chart-blue-label {
+  fill: #007C7C !important;
+}
+.confidence-band {
+  fill: #84CEC3 !important;
+  opacity: .32 !important;
+}
+
+/* Avoid teal headline overload inside change cards */
+.change-card h3 {
+  color: #1F2933 !important;
+}
+.change-card h3::first-letter {
+  color: inherit !important;
+}
+
+/* Keep batteries explicitly signal-colored */
+.battery i.green,
+.roster-meter i.green,
+.mini-meter i.good {
+  background: var(--signal-green) !important;
+}
+.battery i.red,
+.roster-meter i.red,
+.mini-meter i.fill,
+.red-segment {
+  background: var(--signal-red) !important;
+}
+.battery i.orange,
+.roster-meter i.orange,
+.mini-meter i.warn {
+  background: var(--signal-yellow) !important;
+}
+
+/* Brand-colored buttons should not look like positive-status badges */
+.action-link,
+.roster-action a,
+.client-priority-action {
+  box-shadow: none !important;
+  font-weight: 800 !important;
+}
+
+/* Small brand accents in nav/header stay calm */
+.top-jump-label,
+.eyebrow {
+  color: #606060 !important;
+}
+
+
+/* v35: remove third forecast-movement column and let remaining two columns breathe */
+.change-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+@media (max-width: 1000px) {
+  .change-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* v36: replace OpenHouse teal UI accents with Bermuda while preserving red/yellow/green signals */
+:root {
+  --brand-accent: #84CEC3 !important;
+  --brand-accent-dark: #4F9F95 !important;
+  --brand-action-bg: #F3FBFA !important;
+  --brand-action-border: #84CEC3 !important;
+  --brand-action-text: #2F5F5A !important;
+
+  --oh-teal: #84CEC3 !important;
+  --oh-bermuda: #84CEC3 !important;
+  --teal: #84CEC3 !important;
+  --blue: #84CEC3 !important;
+  --blue-soft: #DDF4F1 !important;
+}
+
+/* Brand UI controls: Bermuda, not teal */
+.top-jump-nav .top-jump-button,
+.top-jump-button,
+.action-link,
+.roster-action a,
+.client-priority-action,
+.queue-toggle-text,
+.reasoning summary {
+  background: #F3FBFA !important;
+  border-color: #84CEC3 !important;
+  color: #2F5F5A !important;
+}
+
+.top-jump-nav .top-jump-button:hover,
+.top-jump-button:hover,
+.action-link:hover,
+.roster-action a:hover,
+.client-priority-action:hover,
+.queue-toggle-text:hover {
+  background: #E7F7F5 !important;
+  border-color: #72BFB4 !important;
+  color: #264D49 !important;
+}
+
+/* Icons and brand dividers use Bermuda */
+.section-icon {
+  background: #F3FBFA !important;
+  border-color: #84CEC3 !important;
+  color: #4F9F95 !important;
+}
+.mini-bars span,
+.section-icon .mini-bars span {
+  background: #4F9F95 !important;
+}
+.recommended-rule {
+  background: #84CEC3 !important;
+}
+.recommendation-pill {
+  background: #F3FBFA !important;
+  border-color: #84CEC3 !important;
+  color: #2F5F5A !important;
+}
+
+/* Forecast brand line: Bermuda family, while status remains green/yellow/red */
+.forecast-line {
+  stroke: #4F9F95 !important;
+}
+.chart-blue-label {
+  fill: #4F9F95 !important;
+}
+.confidence-band {
+  fill: #84CEC3 !important;
+  opacity: .34 !important;
+}
+
+/* Remove lingering bright teal declarations from UI accents */
+a[style*="#009999"],
+button[style*="#009999"] {
+  color: #2F5F5A !important;
+}
+
 </style>
 </head>
 <body>
@@ -3108,14 +3320,6 @@ main.page {
         <li>Held appointments remain relatively high and stable.</li>
         <li>Overall web traffic remains stable, with a slight month-over-month increase.</li>
         <li>The May 13 forecast baseline remains about 72 homes over 90 days, or 24 homes/month.</li>
-      </ul>
-    </article>
-    <article class="change-card review">
-      <h3>How It Changes the Review</h3>
-      <ul>
-        <li>Start with targeted community reviews instead of a blanket traffic push.</li>
-        <li>Community Pulse flags traffic deficits at Lake County Communities, Lake Deer Estates, Stillwater Cove, and Deland.</li>
-        <li>The Reserve At Hammock Oaks still needs a conversion-quality review because traffic exists but web-to-lead performance is weak.</li>
       </ul>
     </article>
   </div>
