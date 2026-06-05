@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Maronda Orlando Performance Outlook Report Prototype v29</title>
+<title>Maronda Orlando Performance Outlook Report Prototype v33</title>
 <style>
 
     :root {
@@ -2786,6 +2786,238 @@ main.page {
   }
 }
 
+
+/* v31: make Forecast by Period use full horizontal width */
+#sales-forecast.detail-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  width: 100% !important;
+}
+
+#sales-forecast .panel {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+}
+
+#sales-forecast .forecast-periods {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+}
+
+#sales-forecast .period {
+  margin-top: 0 !important;
+  padding: 0 18px 0 0 !important;
+  border-right: 1px solid #e0e5e5 !important;
+}
+
+#sales-forecast .period:last-child {
+  padding-right: 0 !important;
+  border-right: 0 !important;
+}
+
+#sales-forecast .range {
+  height: 70px !important;
+}
+
+#sales-forecast .range-line {
+  left: 8px !important;
+  right: 8px !important;
+}
+
+#sales-forecast .range-foot {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+@media (max-width: 1000px) {
+  #sales-forecast .forecast-periods {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+  #sales-forecast .period {
+    padding: 0 0 16px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid #e0e5e5 !important;
+  }
+  #sales-forecast .period:last-child {
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+
+/* v32: cut excess vertical whitespace below Forecast by Period */
+#sales-forecast.detail-grid {
+  margin-bottom: 8px !important;
+}
+
+#sales-forecast .panel {
+  min-height: auto !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+#sales-forecast .panel-head {
+  margin-bottom: 10px !important;
+}
+
+#sales-forecast .forecast-periods {
+  margin-bottom: 0 !important;
+}
+
+#sales-forecast .period {
+  padding-bottom: 0 !important;
+}
+
+#sales-forecast .range {
+  height: 44px !important;
+}
+
+#sales-forecast .range-line {
+  top: 14px !important;
+  height: 10px !important;
+}
+
+#sales-forecast .tick {
+  top: 1px !important;
+  height: 34px !important;
+}
+
+#sales-forecast .bubble {
+  top: -2px !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+
+#sales-forecast .range-foot {
+  top: 33px !important;
+}
+
+#forecast-chart {
+  margin-top: 10px !important;
+  padding-top: 14px !important;
+}
+
+#forecast-chart .chart-head {
+  margin-bottom: 8px !important;
+}
+
+#forecast-chart svg {
+  margin-top: -4px !important;
+}
+
+@media (max-width: 1000px) {
+  #sales-forecast .period {
+    padding-bottom: 12px !important;
+  }
+}
+
+
+/* v33: collapse remaining community queue behind a show/expand control */
+.queue-disclosure {
+  margin: 22px 0 0 !important;
+  border: 1px solid #d8dddd !important;
+  border-radius: 14px !important;
+  background: #ffffff !important;
+  box-shadow: 0 1px 0 rgba(31,41,51,.04), 0 5px 14px rgba(31,41,51,.035) !important;
+  overflow: hidden !important;
+}
+
+.queue-disclosure > summary {
+  list-style: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 18px !important;
+  padding: 18px 22px !important;
+  background: #fbfdfd !important;
+}
+
+.queue-disclosure > summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.queue-disclosure > summary strong {
+  display: block !important;
+  margin-top: 3px !important;
+  color: #1f2933 !important;
+  font-size: 22px !important;
+  line-height: 1.15 !important;
+  letter-spacing: -.02em !important;
+}
+
+.queue-disclosure > summary small {
+  display: block !important;
+  margin-top: 5px !important;
+  color: #606060 !important;
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+}
+
+.queue-toggle-text {
+  flex: 0 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 44px !important;
+  border: 1px solid #84CEC3 !important;
+  background: #e8f7f5 !important;
+  color: #006f6f !important;
+  border-radius: 10px !important;
+  padding: 11px 16px !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+  font-weight: 850 !important;
+  white-space: nowrap !important;
+}
+
+.queue-disclosure[open] > summary {
+  border-bottom: 1px solid #e0e5e5 !important;
+}
+
+.queue-disclosure .hide-label {
+  display: none !important;
+}
+
+.queue-disclosure[open] .show-label {
+  display: none !important;
+}
+
+.queue-disclosure[open] .hide-label {
+  display: inline !important;
+}
+
+.queue-disclosure-body {
+  padding: 18px 22px 22px !important;
+}
+
+.queue-disclosure-body .community-roster-card,
+.queue-disclosure-body section.community-roster-card {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.queue-disclosure-body .explain-note {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1000px) {
+  .queue-disclosure > summary {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 16px !important;
+  }
+  .queue-disclosure-body {
+    padding: 16px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -2890,14 +3122,6 @@ main.page {
 
   
   <section class="detail-grid" id="sales-forecast">
-    <article class="card panel">
-      <div class="panel-head"><div><h3>Sales Forecast</h3><p class="subtitle">Forward-looking sales projection vs target</p></div><div class="legend"><span><i></i>Actual</span><span><i></i>Target / Forecast</span></div></div>
-      <div class="bar-chart"><div class="axis-label target">TARGET</div><div class="axis-label mid">50%</div><div class="axis-label zero">0%</div><div class="target-line"></div><div class="grid-line"></div><div class="bars">
-        <div class="bar-group"><div class="stack-value">9 / 30</div><div class="stack may"><div class="segment blue bar-may-actual"></div></div><div class="x-label">May MTD</div><div class="spec-label">21 sales to target</div></div>
-        <div class="bar-group"><div class="stack-value">120 / 136</div><div class="stack ytd"><div class="segment blue bar-ytd-actual"></div></div><div class="x-label">YTD</div><div class="spec-label">16 sales to target</div></div>
-        <div class="bar-group"><div class="stack-value">24 / 22 mo</div><div class="stack forecast"><div class="segment blue-soft bar-forecast-actual"></div></div><div class="x-label">90-Day</div><div class="spec-label">2 sales/mo ahead</div></div>
-      </div></div>
-    </article>
     <article class="card panel">
       <div class="panel-head"><div><h3>Forecast by Period</h3><p class="subtitle">Range, target, and forecast point</p></div></div>
       <div class="forecast-periods">
@@ -3310,8 +3534,19 @@ main.page {
   </div>
 </article>
 
-<section id="community-queue-wrapper" aria-labelledby="remaining-communities-title" class="card community-roster-card">
-    <div class="roster-head"><div><p class="eyebrow">Remaining Communities</p><h3 id="remaining-communities-title">Community Queue</h3><p>All remaining communities are listed here after the OpenHouse-selected priorities. Add as Priority is only available for communities not already selected by OpenHouse.</p></div></div>
+
+<details class="queue-disclosure" id="community-queue-wrapper">
+  <summary>
+    <span>
+      <span class="eyebrow">Remaining Communities</span>
+      <strong>Community Queue</strong>
+      <small>Show all remaining communities and add one as a priority.</small>
+    </span>
+    <span class="queue-toggle-text"><span class="show-label">Show</span><span class="hide-label">Hide</span> queue</span>
+  </summary>
+  <div class="queue-disclosure-body">
+    <section data-section="community-queue-wrapper" aria-labelledby="remaining-communities-title" class="card community-roster-card">
+    
     <div class="explain-note"><div><span class="note-marker">*</span> <strong>Target outlook:</strong> Critical 0-34% · At Risk 35-64% · Monitor Closely 65-79% · On Track 80-100%.</div></div>
     <div class="roster-table"><div class="roster-section-label">Needs Attention</div>
 
@@ -3460,6 +3695,9 @@ main.page {
 
     </div>
   </section>
+  </div>
+</details>
+
 </section>
 
     </section>
